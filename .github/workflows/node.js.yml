@@ -24,6 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: install node modules
+      run: npm install
     - name: install playwright
       run: npx playwright install
     - name: run backend and frontend
