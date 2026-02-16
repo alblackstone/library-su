@@ -28,8 +28,8 @@ jobs:
       run: npx playwright install
     - name: run backend and frontend
       run: |
-           npm start
            npm start server
+           npm start start
     - name: run tests
       run: npm test
       
