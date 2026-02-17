@@ -22,6 +22,8 @@ jobs:
         cache: npm
     - name: install node modules
       run: npm install
+    - name: run vulnerability test
+      run: npm audit fix --force
     - name: install playwright
       run: npx playwright install
     - name: run frontend
